@@ -22,7 +22,7 @@ URLs: [Password Generator](https://natpitt2393.github.io/Password-Generator/)
 Screenshot of website: 	
 
 
-![Password Generator](./assets/images/Screenshot.png)
+![Password Generator](./assets/images/PGScreenshot.png)
 
 License:
 Copyright (c) 2021 Nathaniel Epstein
