@@ -17,10 +17,13 @@ var userCharPool = [];
 
 var passwordArr = [];
 
-var userChoiceLength = prompt("Enter password length: ");
+var userChoiceLength = prompt("Enter password length. Must be between 8 and 128 characters.");
+if (userChoiceLength < 8 || userChoiceLength > 128) {
+    alert("Please follow directions!")
+};
 // then use confirm method to ask if user wants to use special characters, numbers, lowercase, etc..
 // Main Process 
-var userChoiceSpecialChar = confirm("Would you like to include special characters? Must be between 8 and 128 characters.");
+var userChoiceSpecialChar = confirm("Would you like to include special characters?");
 console.log(userChoiceSpecialChar);
 var userChoiceUppcase = confirm("Would you like to include upper case characters?");
 console.log(userChoiceUppcase);
@@ -29,3 +32,30 @@ console.log(userChoiceLowcase);
 var userChoiceNum = confirm("Would you like to include numbers?");
 console.log(userChoiceNum);
 
+function copyArrayPool(arr) {
+    for (var i = 0; i < arr.length; i++) {
+      userCharPool.push(arr[i]);
+  
+    } console.log(userCharPool);
+    return;
+  }
+  
+  if (userChoiceSpecialChar) {
+    copyArrayPool(specialCharArr);
+    console.log(userCharPool);
+  }
+  
+  if (userChoiceUppcase) {
+    copyArrayPool(uppcaseLettersArr);
+    console.log(userCharPool);
+  }
+  
+  if (userChoiceLowcase) {
+    copyArrayPool(lowcaseLettersArr);
+    console.log(userCharPool);
+  }
+  
+  if (userChoiceNum) {
+    copyArrayPool(numArr);
+    console.log(userCharPool);
+  }
