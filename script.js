@@ -17,6 +17,9 @@ var userCharPool = [];
 
 var passwordArr = [];
 
+//This is the function that will execute when you press the generate the password button
+
+
 var userChoiceLength = prompt("Enter password length. Must be between 8 and 128 characters.");
 if (userChoiceLength < 8 || userChoiceLength > 128) {
     alert("Please follow directions!")
@@ -66,3 +69,24 @@ for (var i = 0; i < userChoiceLength; i++) {
   
     passwordArr.push(userCharPool[index]);
   }
+
+console.log(passwordArr);
+var completePassword = alert("Please click generate password.");
+
+
+function generatePassword() {
+    var password = passwordArr.join("");
+    return password;
+  }
+  
+  function writePassword() {
+    var password = generatePassword();
+    var passwordTextEl = document.getElementById("password");
+  
+    passwordTextEl.value = password;
+  
+    return;
+  
+  };
+  
+  generateBtn.addEventListener("click", writePassword);
