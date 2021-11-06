@@ -59,3 +59,10 @@ function copyArrayPool(arr) {
     copyArrayPool(numArr);
     console.log(userCharPool);
   }
+
+
+for (var i = 0; i < userChoiceLength; i++) {
+    var index = Math.floor(Math.random() * userCharPool.length);
+  
+    passwordArr.push(userCharPool[index]);
+  }
