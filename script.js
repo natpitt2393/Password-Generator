@@ -22,8 +22,8 @@ var passwordArr = [];
 
 var userChoiceLength = prompt("Enter password length. Must be between 8 and 128 characters.");
 if (userChoiceLength < 8 || userChoiceLength > 128) {
-    alert("Please follow directions!")
-};
+    alert("Please follow directions!");
+}
 // then use confirm method to ask if user wants to use special characters, numbers, lowercase, etc..
 // Main Process 
 var userChoiceSpecialChar = confirm("Would you like to include special characters?");
