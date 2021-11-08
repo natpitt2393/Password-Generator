@@ -12,7 +12,7 @@ Setup/Installation Requirements:
 Clone the repository.
 
 Known Bugs:
-Will continue to execute code despite the conditional statement for password length even if the requirements are met. HTML and CSS elements will not appear until all confirmations and alerts appear. Can't figure out how to have the click generate password button to have all the alerts show up. 
+N/A
 
 URLs: [Password Generator](https://natpitt2393.github.io/Password-Generator/)
 
